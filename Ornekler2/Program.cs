@@ -26,6 +26,7 @@ namespace Ornekler2
                     Console.WriteLine("2-Bilgisayar Aletleri");
 
                     char secim = Convert.ToChar(Console.ReadLine());
+
                     if (secim == '1')
                     {
                         Console.WriteLine("Lütfen beyaz eşyanızın adını girin: ");
@@ -51,8 +52,6 @@ namespace Ornekler2
                             int sonfiyat = (toplam + kdvlifiyat);
                             Console.WriteLine("Ödenemniz Gereken Tutar: " + sonfiyat);
                             Console.WriteLine("İyi günler dileriz...");
-
-
                         }
 
                         else if (esyaad == "Bulaşık Makinesi" && esyamarka == "Arçelik")
@@ -209,7 +208,53 @@ namespace Ornekler2
                                         break;
 
                                     case "xxx":
-                                        
+                                        Console.WriteLine("Dell notebook fiyatı nedir?");
+                                        float dellnotebookfiyat = Convert.ToSingle(Console.ReadLine());
+                                        Console.WriteLine("Sipariş vermek istiyorsanız sipariş türü seçiniz: ");
+                                        Console.WriteLine("Seçenekler");
+                                        Console.WriteLine("*-Kargo");
+                                        Console.WriteLine("**-Hızlı Teslimat");
+                                        string secimxxx = Convert.ToString(Console.ReadLine());
+                                        switch (secimxxx)
+                                        {
+                                            case "*":
+                                                Console.WriteLine("Kargo türünü seçiniz...");
+                                                string kargotür = Convert.ToString(Console.ReadLine());
+                                                if(kargotür== "mngkargo")
+                                                {
+                                                    Console.WriteLine("Kargonuzun ağırlığı nedir?");
+                                                    int kargoagirlik = Convert.ToInt32(Console.ReadLine());
+                                                    float kargoücret= Convert.ToSingle(Console.ReadLine());
+
+                                                    if (kargoagirlik>1 && kargoagirlik<5)
+                                                    {
+                                                       kargoücret = (dellnotebookfiyat * 2.5f / 100);
+                                                        Console.WriteLine("Kargo ücretiniz: "+kargoücret);
+                                                    }
+                                                    else if(kargoagirlik>=5)
+                                                    {
+                                                        kargoücret = (dellnotebookfiyat * 10/ 100);
+                                                        Console.WriteLine("Kargo ücretiniz: " + kargoücret);
+
+                                                    }
+                                                }
+                                                else if (kargotür=="yurtiçikargo")
+                                                {
+
+                                                }
+                                            break;
+
+                                            case "**":
+
+
+                                            break;
+
+                                            default:
+
+                                             break;
+
+                                        }
+
                                         break;
                                     case "xxxx":
 
@@ -223,7 +268,7 @@ namespace Ornekler2
                                 break;
 
                             case "y":
-
+                                
                                 break;
 
 
