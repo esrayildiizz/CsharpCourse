@@ -323,42 +323,109 @@ namespace Ornekler3
             //random değerler 1 ve 1000 arasında olucak.
 
 
-            Console.WriteLine("Kaç sayı üretilsin?");
-            int adet = Convert.ToInt32(Console.ReadLine());
-            Random rastgele = new Random(adet);
-          
+            //Console.WriteLine("Kaç sayı üretilsin?");
+            //int adet = Convert.ToInt32(Console.ReadLine());
+            //Random rastgele = new Random(adet);
 
-            int iadet = 0;
-            int üadet = 0;
-            int toplam = 0;
 
-            for (int i = 0; i < adet; i++)
+            //int iadet = 0;
+            //int üadet = 0;
+            //int toplam = 0;
+
+            //for (int i = 0; i < adet; i++)
+            //{
+            //    int sayi = rastgele.Next(0, 1000);
+            //    Console.WriteLine(sayi);
+            //    if (sayi < 100 && sayi > 9)
+            //    {
+            //        iadet++;
+            //    }
+            //    else if (sayi < 1000 && sayi > 99)
+            //    {
+            //        üadet++;
+            //    }
+
+            //    else if (sayi < 5)
+            //    {
+            //        toplam = toplam + sayi;
+            //    }
+            //}
+
+
+            //Console.WriteLine("İki basamaklı sayıların adedi: "+iadet);
+            //Console.WriteLine("Üç basamaklı sayıların adedi: "+üadet);
+            //Console.WriteLine("5 den küçük sayıların toplamı: "+toplam);
+
+            //Console.ReadLine();
+
+
+
+
+
+
+            //ornek13
+
+            //Console.WriteLine("Bir sayı giriniz?");
+            //int sayi= Convert.ToInt32(Console.ReadLine());
+
+            //int carpim = 1;
+
+            //for (int i = 1; i < sayi+1; i++)
+            //{
+            //    carpim = i * (i+1);
+            //    Console.WriteLine("Sonuç:"+i+"x"+(i+1)+"="+carpim);
+            //}
+
+
+            //Console.ReadLine();
+
+
+
+
+
+
+
+            //ornek14
+
+
+            Console.WriteLine("Sayı girin lütfen: ");
+            int sayi = Convert.ToInt32(Console.ReadLine());
+
+            int kontrol = 0;
+            for (int i = 2; i < sayi; i++)
             {
-                int sayi = rastgele.Next(0, 1000);
-                Console.WriteLine(sayi);
-                if (sayi < 100 && sayi > 9)
-                {
-                    iadet++;
-                }
-                else if (sayi < 1000 && sayi > 99)
-                {
-                    üadet++;
-                }
-
-                else if (sayi < 5)
-                {
-                    toplam = toplam + sayi;
-                }
+                if (sayi % i == 0)
+                    kontrol++;
             }
-            
 
-            Console.WriteLine("İki basamaklı sayıların adedi: "+iadet);
-            Console.WriteLine("Üç basamaklı sayıların adedi: "+üadet);
-            Console.WriteLine("5 den küçük sayıların toplamı: "+toplam);
+            if (kontrol != 0)
+            {
+                Console.WriteLine("Girdiğiniz sayı asal değildir....");
+            }
+            else
+            {
+                Console.WriteLine("Girdiğiniz sayı asaldır...");
+            }
 
             Console.ReadLine();
-          
-            
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
         }
     }
