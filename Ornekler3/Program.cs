@@ -388,43 +388,115 @@ namespace Ornekler3
             //ornek14
 
 
-            Console.WriteLine("Sayı girin lütfen: ");
-            int sayi = Convert.ToInt32(Console.ReadLine());
+            //Console.WriteLine("Sayı girin lütfen: ");
+            //int sayi = Convert.ToInt32(Console.ReadLine());
 
-            int kontrol = 0;
-            for (int i = 2; i < sayi; i++)
+            //int kontrol = 0;
+            //for (int i = 2; i < sayi; i++)
+            //{
+            //    if (sayi % i == 0)
+            //        kontrol++;
+            //}
+
+            //if (kontrol != 0)
+            //{
+            //    Console.WriteLine("Girdiğiniz sayı asal değildir....");
+            //}
+            //else
+            //{
+            //    Console.WriteLine("Girdiğiniz sayı asaldır...");
+            //}
+
+            //Console.ReadLine();
+
+
+
+
+
+
+
+            //ornek15
+
+
+            //bir bakteri cinsi her 4 dk bir ikiye bölünerek çoğalmaktadır.başlangıçta bir bakteri olduğunu kabul ederekbir saat sonra oluşacak bakteri sayısını bulunuz.
+
+            // double bakterisayisi = 1;
+            // int dakika = 0;
+
+            //while(dakika<60)
+            // {
+            //     bakterisayisi = bakterisayisi * 2;
+            //     dakika = dakika + 4;
+            //     Console.WriteLine("{0}.Dakikada ki bakteri sayısı: {1}", dakika,bakterisayisi);
+
+            // }
+
+            // Console.ReadLine();
+
+
+
+
+
+
+
+
+
+            //ornek16
+
+            //kullanıcının girdiği çalışan sayısına göre çalışanın maasşını kullanıcıdan isticez
+            // eğer maaş 4 binden büyül 8 binden küçük ise kaç yıldı çalışıyor sor.
+            //   yıl 5ile 10 arasında ise bin ile 3 bin arasında mesai ver random ile 
+            //  ever 5 10 arasında değil ise 0ile bin arasında mesai ver.
+            //maaş 4 bin ile 8 bin arasında değil ise 0 ile 500 arasında mesai ver .
+            //çalışanların toplam maaş ilemesai  yazdır.
+
+            Random rastgele = new Random();
+            Console.WriteLine("Çalışan sayısını giriniz:");
+            int sayi= Convert.ToInt32(Console.ReadLine());
+            int toplam = 0;
+            int gtoplam = 0;
+            int mesai = 0;
+           
+
+            for (int i = 1; i <=sayi; i++)
             {
-                if (sayi % i == 0)
-                    kontrol++;
+                Console.WriteLine( i+".çalışanın maaşını giriniz.");
+                int maas= Convert.ToInt32(Console.ReadLine());
+
+                toplam = maas + mesai;
+                gtoplam = gtoplam + toplam;
+
+                if (maas>4000 && maas < 8000)
+                {
+                    Console.WriteLine("Kaç yıldır çalışıyor?");
+                    int yil = Convert.ToInt32(Console.ReadLine());
+                    if(yil>5 && yil < 10)
+                    {
+                        mesai = rastgele.Next(1000, 3000);
+                        Console.WriteLine(i + ".Çalışanın Mesaisi: " + mesai);
+                        toplam = maas + mesai;
+                        Console.WriteLine(i+ ".Çalışanın Toplam Maaşı: " + toplam);
+                    }
+                    else
+                    {
+                        mesai = rastgele.Next(0, 1000);
+                        Console.WriteLine(i + ".Çalışanın Mesaisi: " + mesai);
+                        toplam = maas + mesai;
+                        Console.WriteLine(i + ".Çalışanın Toplam Maaşı: " + toplam);
+                    }
+                }
+                else
+                {
+                    mesai = rastgele.Next(0, 500);
+                    Console.WriteLine(i + ".Çalışanın Mesaisi: " + mesai);
+                    toplam = maas + mesai;
+                    Console.WriteLine(i + ".Çalışanın Toplam Maaşı: " + toplam);
+                }
+
             }
 
-            if (kontrol != 0)
-            {
-                Console.WriteLine("Girdiğiniz sayı asal değildir....");
-            }
-            else
-            {
-                Console.WriteLine("Girdiğiniz sayı asaldır...");
-            }
-
+            Console.WriteLine("Çalışanların toplam maaş+mesai: "+gtoplam);
             Console.ReadLine();
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 
         }
