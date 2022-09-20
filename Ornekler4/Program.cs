@@ -134,26 +134,37 @@ namespace Ornekler4
 
             //ornek5
 
-            string sayi = "12345678910";
+            //string sayi = "12345678910";
 
-            for (int i = 0; i <= sayi.Length; i++)
-            {
-                for (int j = 0; j < i; j++)
-                {
-                    Console.Write(sayi[j]);
-                }
-                Console.WriteLine();
-            }
+            //for (int i = 0; i <= sayi.Length; i++)
+            //{
+            //    for (int j = 0; j < i; j++)
+            //    {
+            //        Console.Write(sayi[j]);
+            //    }
+            //    Console.WriteLine();
+            //}
 
-            Console.ReadLine();
-
-
+            //Console.ReadLine();
 
 
 
 
+            //ornek6
 
 
+            //string birlesim = "";
+            //for (int i = 1; i <= 10; i++)
+            //{
+            //    for (int j = 1; j <= i; j++)
+            //    {
+            //        birlesim += j;
+            //    }
+            //    Console.Write(birlesim);
+            //    birlesim = null;
+            //    Console.WriteLine();
+            //}
+            //Console.ReadLine();
 
 
 
