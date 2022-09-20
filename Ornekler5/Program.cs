@@ -152,6 +152,75 @@ namespace Ornekler5
 
 
 
+            //ornek7
+
+            //klavyeden 15 girilene kadar sayıları toplayıp ekrana yazdıran prog.
+
+            //int sayi = 0;
+            //int toplam = 0;
+
+            //while (sayi!=15)
+            //{
+            //    Console.WriteLine("Lütfen sayı giriniz: ");
+            //    sayi= Convert.ToInt32(Console.ReadLine());
+            //    if (sayi == 15)
+            //    {
+            //        break;
+            //    }
+
+            //    toplam = toplam + sayi;
+            //}
+
+            //Console.WriteLine("Tebrikler 15 sayısını girdiniz...");
+            //Console.WriteLine("Girdiğiniz sayıların toplamı: " + toplam);
+
+
+            //Console.ReadLine();
+
+
+
+
+            //ornek8
+
+            //klavyeden z karakteri girilene kadar tüm harfleri yan yana yazdıran prog.
+
+
+            //string harf = "abcdefghijklmnoprstuvyz";
+            //string birleştir = null;
+            //while (harf != "z")
+            //{
+            //    Console.Write("Bir harf giriniz: ");
+            //    harf = Convert.ToString(Console.ReadLine());
+            //    birleştir += harf;
+            //}
+
+            //Console.WriteLine("Kelimeniz:" + birleştir);
+            //Console.ReadLine();
+
+
+
+
+
+            //ornek9
+            //250 ile 1000 arasında  rastgele 10 çift sayının ekrana yazdırılması
+
+            //Random rastgele = new Random();
+            //int sayi;
+            //int adet=0;
+
+            //while (adet<=10)
+            //{
+            //    sayi = rastgele.Next(250, 1000);
+            //    if (sayi % 2 == 0)
+            //    {
+            //        adet++;
+            //        Console.WriteLine("Çift sayılarımız: "+sayi);
+            //    }
+
+            //}
+
+
+            //Console.ReadLine();
 
 
 
@@ -161,10 +230,24 @@ namespace Ornekler5
 
 
 
+            //ornek10
 
+            //rastgele üretilen 1 ile 100 arasındaki sayıların toplamı 1000 i geçtiğinde sayıları ve toplamı yazan prog.
 
+            //Random rastgele = new Random();
 
+            //int toplam = 0;
+            //int sayi ;
 
+            //while (toplam < 1001)
+            //{
+            //   sayi = rastgele.Next(1, 100);
+            //   toplam += sayi;
+            //   Console.WriteLine("SAYI:"+sayi);
+                
+            //}
+            //Console.WriteLine("SAYILARIN TOPLAMI: " + toplam);
+            //Console.ReadLine();
 
 
 
