@@ -232,6 +232,7 @@ namespace Ornekler5
 
             //ornek10
 
+
             //rastgele üretilen 1 ile 100 arasındaki sayıların toplamı 1000 i geçtiğinde sayıları ve toplamı yazan prog.
 
             //Random rastgele = new Random();
@@ -244,10 +245,192 @@ namespace Ornekler5
             //   sayi = rastgele.Next(1, 100);
             //   toplam += sayi;
             //   Console.WriteLine("SAYI:"+sayi);
-                
+
             //}
             //Console.WriteLine("SAYILARIN TOPLAMI: " + toplam);
             //Console.ReadLine();
+
+
+
+
+
+
+
+
+
+
+            //ornek11
+
+            //klavyeden girilen 1 ile 100 arasında tutulan sayının ,rastgele olarak tutulan
+            //sayıların ikinci olarak kaç defada tutulduğunu bulan c# kodu (sayılar yan yana yazılacak)
+
+
+            //Console.Write("Bir sayı giriniz: ");
+            //int sayi = Convert.ToInt32(Console.ReadLine());
+            //Random rastgele = new Random();
+
+            //int sayac1 = 0; 
+            //int sayac2 = 0; //KAÇ ADIMDA BULDUĞUNU SAYMAK İÇİN
+
+            //while (sayac1<2) // 2.DEFADA BULDUĞUNDA DURUCAK
+            //{
+            //    int rsayi = rastgele.Next(1, 100);
+            //    Console.Write(rsayi+" ");
+            //    sayac2++;
+
+            //    if (sayi == rsayi)
+            //    {
+            //        sayac1++;
+            //    }
+            //}
+
+            //Console.WriteLine();
+            //Console.WriteLine("Sayı "+sayac2 +" defada bulundu.");
+
+            //Console.ReadLine();
+
+
+
+
+
+
+
+
+            //ornek12
+
+
+            //int sayac = 0, top = 0, ort = 0;
+
+            //do
+            //{
+            //    Console.Write("Öğrencinin notunu gir :");
+            //    int not = Convert.ToInt32(Console.ReadLine());
+            //    sayac += 1;
+            //    top = top + not;
+
+            //} while (sayac != 10);
+
+            //ort = top / sayac;
+            //Console.WriteLine("ortalama :" + ort);
+            //Console.ReadLine();
+
+
+
+
+
+
+
+            //ornek13
+
+
+
+            //don:
+            //    Console.Write("Sayı girin :");
+            //    int sayi = Convert.ToInt32(Console.ReadLine());
+            //    int tek = 1;
+            //    if (sayi == 0)
+            //    {
+            //        Console.WriteLine("Girilen sayı sıfırdır.");
+            //        Console.WriteLine("Tekrar sayı giriniz...");
+            //        goto don;
+            //    }
+            //    else
+            //    {
+            //        do
+            //        {
+            //            Console.WriteLine(tek);
+            //            tek += 2;
+            //        }
+            //        while (tek < sayi);
+            //    }
+
+
+            //    Console.ReadLine();
+
+
+
+
+
+
+            //ornek14
+
+            //klavyeden sıfır sayısını girene kadar sayıların toplamını bulan prog.
+            //int sayi = 0;
+            //int adet = 0;
+            //int toplam = 0;
+            //do
+            //{
+            //    Console.WriteLine("Sayı Giriniz :");
+            //    sayi = Convert.ToInt32(Console.ReadLine());
+            //    toplam = toplam + sayi;
+            //    adet++;
+            //}
+            //while (sayi != 0);
+
+            //{
+            //    Console.WriteLine("Girdiğiniz sayıların toplamı :" + toplam);
+            //    toplam = toplam + sayi;
+            //    adet++;
+            //}
+            //Console.ReadLine();
+
+
+
+
+
+
+
+
+
+            //ornek15
+
+            //int sifre = 0;
+            //string nick = "";
+            //int secim = 0;
+            //Console.WriteLine("Kullanıcı adınızı giriniz");
+            //nick = Console.ReadLine();
+            //Console.WriteLine("Şifrenizi giriniz");
+            //sifre = Convert.ToInt32(Console.ReadLine());
+
+            //do
+            //{
+            //    if (sifre == 1234)
+            //    {
+            //        Console.WriteLine("Yapmak istediğiniz işlemi seçiniz");
+            //        Console.WriteLine("1-Kullanınıcı kaydı ekle");
+            //        Console.WriteLine("2-Aktivasyon işlemi");
+            //        secim = Convert.ToInt32(Console.ReadLine());
+            //        if (secim == 1)
+            //        {
+            //            Console.WriteLine("Kullanıcı kaydı eklendi");
+            //        }
+            //        else if (secim == 2)
+            //        {
+            //            Console.WriteLine("Aktivasyon işlemi başarılı");
+            //        }
+            //    }
+
+            //    else
+            //    {
+            //        Console.WriteLine("Hatalı giriş yaptınız");
+            //        break;
+            //    }
+            //}
+            //while (sifre != 1234);
+            //Console.ReadLine();
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
