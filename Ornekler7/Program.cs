@@ -384,14 +384,14 @@ namespace Ornekler7
             //    if (sayilar[i] % 10 == 0)
             //    {
             //        sayac1++;
-                    
+
             //    }
             //    else if (sayilar[i]%10!=0)
             //    {
             //        if(sayilar[i] % 5 == 0)
             //        {
             //            sayac2++;
-                       
+
             //        }
             //    }            }
             //Console.WriteLine("Sonu sıfır olan sayılar: " + sayac1);
@@ -408,8 +408,84 @@ namespace Ornekler7
 
 
 
+            //ornek11
+
+            //random gelen sayıların birbirinden farklı olarak atanması.
+
+            //Random rastgele = new Random();
+            //int[] dizi = new int[10];
+
+            //for (int i = 0; i < 10; i++)
+            //{
+            //    dizi[i] = rastgele.Next(1, 100);
+
+            //    for (int a = 0; a < i; a++)
+            //    {
+            //        if (dizi[a] == dizi[i])
+            //        {
+            //            i--;
+            //            break;
+            //        }
+            //    }
+            //}
+            //Console.WriteLine("dizi benzersiz sayılarla dolduruluyor..");
+            //Console.WriteLine("dizi dolduruldu. ekrana yazdırılıyor...");
+
+            //for (int esra = 0; esra < 10; esra++)
+            //{
+
+            //    Console.WriteLine(dizi[esra]);
+
+            //}
+
+            //Console.ReadLine();
 
 
+
+
+
+
+
+
+
+
+
+            //ornek12
+
+
+            //Console.WriteLine(" LÜTFEN DİZİNİN ELEMAN SAYISINI GİRİNİZ:");
+            //int sayi = Convert.ToInt32(Console.ReadLine());
+
+            //int[] sayilar = new int[sayi];
+
+
+            //for (int i = 0; i < sayi; i++)
+            //{
+            //    Console.Write(i + 1 + ". Sayıyı Girin: ");
+            //    sayilar[i] = Convert.ToInt32(Console.ReadLine());
+            //}
+
+            //Console.WriteLine("tek sayılar:");
+            //for (int i = 0; i < sayi; i++)
+            //{
+            //    if (sayilar[i] % 2 == 1)
+            //    {
+            //        Console.WriteLine(sayilar[i]);
+            //    }
+
+            //}
+
+            //Console.WriteLine("Çift sayılar:");
+            //for (int i = 0; i < sayi; i++)
+            //{
+            //    if (sayilar[i] % 2 == 0)
+            //    {
+            //        Console.WriteLine(sayilar[i]);
+            //    }
+
+            //}
+        
+            //Console.ReadLine();
 
 
 
