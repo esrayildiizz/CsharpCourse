@@ -484,7 +484,57 @@ namespace Ornekler7
             //    }
 
             //}
-        
+
+            //Console.ReadLine();
+
+
+
+
+
+
+
+            //ornek13
+
+            //10 elemanlı diziye rastgele -50 ile 100 arası sayılar atan ve daha sonra dizinin elemanlarını,pozitif sayı adedini, negatif sayı adedini ve nötr adedini gösteren prog.
+
+
+            //Random rastgele = new Random();
+            //int[] sayilar = new int[10];
+
+            //int psayac = 0;
+            //int nsayac = 0;
+            //int sayacnötr = 0;
+
+
+            //for (int i = 0; i < 10; i++)
+            //{
+
+            //    sayilar[i] = rastgele.Next(-50, 100);
+            //    Console.WriteLine("Rastgele "+(i+1)+".sayı: " + sayilar[i]);
+
+            //}
+
+            //for (int i = 0; i < 10; i++)
+            //{
+            //    if (sayilar[i] > 0)
+            //    {
+            //        psayac++;
+            //    }
+            //    else if(sayilar[i] < 0)
+            //    {
+            //        nsayac++;
+            //    }
+            //    else
+            //    {
+            //        sayacnötr++;
+            //    }
+            //}
+            //Console.WriteLine();
+            //Console.WriteLine("Pozitif sayıların adedi: "+psayac);
+            //Console.WriteLine();
+            //Console.WriteLine("Negatif sayıların adedi: "+nsayac);
+            //Console.WriteLine();
+            //Console.WriteLine("Nötr sayıların adedi: "+sayacnötr);
             //Console.ReadLine();
 
 
@@ -495,6 +545,32 @@ namespace Ornekler7
 
 
 
+            //ornek14
+
+            //kullanıcıdan alınan metnin içinde bulunan sesli harf sayısını bulan prog.
+            //char[] sesliharf = {'a','e','i','ı','o','ö','u','ü' };
+            //int sayac = 0;
+
+            //Console.WriteLine("Metin giriniz: ");
+            //string metin = Convert.ToString(Console.ReadLine());
+
+            //for (int i = 0; i < metin.Length; i++)
+            //{
+
+            //    for (int a= 0; a <sesliharf.Length; a++)
+            //    {
+            //        if (metin[i] == sesliharf[a])
+            //        {
+            //            sayac++;
+            //        }
+            //    }
+            //}
+
+            //Console.WriteLine("Metin Uzunluğu: " + metin.Length);
+            //Console.WriteLine("Metin İçindeki Sesli Harf Sayısı: " + sayac);
+
+
+            //Console.ReadLine();
 
 
 
@@ -503,15 +579,36 @@ namespace Ornekler7
 
 
 
+            //ornek15
+
+            string[] cumle = new string[5];
+            int uzunluk = 0;
+            string enuzun = "";
+            int indis = 0;
 
 
 
+            for (int i = 0; i < 5; i++)
+            {
+                Console.WriteLine(i + 1 + ". metin giriniz:");
+                cumle[i] = Console.ReadLine();
+                if (cumle[i].Length > uzunluk)
+                {
+                    uzunluk = cumle[i].Length;
+                    enuzun = cumle[i];
+                    indis = i;
 
+                }
+            }
+            Console.WriteLine("En uzun cümle : " + enuzun);
+            Console.WriteLine("Uuzunluk : " + uzunluk);
+            Console.WriteLine("Bulundugu indis sayısı : " + (indis + 1));
 
-
-
-
-
+            Console.ReadLine();
         }
+
+
+
     }
+    
 }
