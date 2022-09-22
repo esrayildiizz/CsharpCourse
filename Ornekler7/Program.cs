@@ -285,34 +285,127 @@ namespace Ornekler7
             // kaç adet olduğunu gösteren yok ise de  bulunamadı diyen prog.
 
 
-            Random rastgele = new Random();
-            int[] sayilar = new int[20];
-            int adet = 0;
-         
+            //Random rastgele = new Random();
+            //int[] sayilar = new int[20];
+            //int adet = 0;
 
-            for (int i = 0; i < 20; i++)
-            {
-                sayilar[i] = rastgele.Next(1, 10);
-            }
 
-            Console.WriteLine("Sayı giriniz: " );
-            int sayi = Convert.ToInt32(Console.ReadLine());
+            //for (int i = 0; i < 20; i++)
+            //{
+            //    sayilar[i] = rastgele.Next(1, 10);
+            //}
 
-            for (int i = 0; i < 20; i++)
-            { 
-                if (sayilar[i] ==sayi)
-                {
-                    adet++;
-                }
-            }
-            Console.WriteLine("Girdiğiniz sayı dizide " + adet + " adettir.");
-            Console.WriteLine();
-            if (adet == 0)
-            {
-                Console.WriteLine(sayi + "değerini bulamadık..");
-            }
-            
-            Console.ReadLine();
+            //Console.WriteLine("Sayı giriniz: " );
+            //int sayi = Convert.ToInt32(Console.ReadLine());
+
+            //for (int i = 0; i < 20; i++)
+            //{ 
+            //    if (sayilar[i] ==sayi)
+            //    {
+            //        adet++;
+            //    }
+            //}
+            //Console.WriteLine("Girdiğiniz sayı dizide " + adet + " adettir.");
+            //Console.WriteLine();
+            //if (adet == 0)
+            //{
+            //    Console.WriteLine(sayi + "değerini bulamadık..");
+            //}
+
+            //Console.ReadLine();
+
+
+
+
+
+
+
+
+
+            //ornek9
+
+            //girilen 10 üründen fiyatı 2 basamaklıysa %20 zam 
+            //3 basamaklıysa %50 zam yapan prog.
+
+            //int[] fiyatlar = new int[10];
+            //int zam = 1;
+            //int yfiyat = 0;
+            //for (int i = 0; i < 10; i++)
+            //{
+            //    Console.Write(i + 1 + ".ürünün fiyatını girin: ");
+            //    fiyatlar[i] = Convert.ToInt32(Console.ReadLine());
+            //}
+            //for (int i = 0; i < 10; i++)
+            //{
+            //    if (fiyatlar[i]>9 && fiyatlar[i] <100)
+            //    {
+            //        zam = fiyatlar[i] * 20 / 100;
+            //        yfiyat = fiyatlar[i] + zam;
+            //    }
+            //    else if(fiyatlar[i] >99 && fiyatlar[i] < 1000)
+            //    {
+            //         zam = fiyatlar[i] * 50 / 100;
+            //        yfiyat = fiyatlar[i] + zam;
+            //    }
+
+            //    Console.WriteLine(i + 1 + ".ürünün zamli fiyatı: " +yfiyat);
+            //}
+            //Console.ReadLine();
+
+
+
+
+
+
+
+            //ornek10
+
+            //dizinin boyutunu kullanıcının girdiği değere göre belirleyen ve girilen sayıların sonu sıfır olanların
+            //adedini ,olmayanların ise 5'e bölünenlerin adedini veren prog.
+
+
+
+            //Console.WriteLine(" LÜTFEN DİZİNİN ELEMAN SAYISINI GİRİNİZ:");
+            //int sayi= Convert.ToInt32(Console.ReadLine());
+
+            //int[] sayilar = new int[sayi];
+
+            //for (int i = 0; i < sayi; i++)
+            //{
+            //    Console.Write(i + 1 + ". Sayıyı Girin: ");
+            //    sayilar[i] = Convert.ToInt32(Console.ReadLine());
+            //}
+
+            //int sayac1 = 0;
+            //int sayac2 = 0;
+
+            //for (int i = 0; i < sayi; i++)
+            //{
+            //    if (sayilar[i] % 10 == 0)
+            //    {
+            //        sayac1++;
+                    
+            //    }
+            //    else if (sayilar[i]%10!=0)
+            //    {
+            //        if(sayilar[i] % 5 == 0)
+            //        {
+            //            sayac2++;
+                       
+            //        }
+            //    }            }
+            //Console.WriteLine("Sonu sıfır olan sayılar: " + sayac1);
+            //Console.WriteLine("Sonu sıfır olmayıp 5'e bölünen sayılar: " + sayac2);
+            //Console.ReadLine();
+
+
+
+
+
+
+
+
+
 
 
 
