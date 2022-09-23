@@ -581,33 +581,58 @@ namespace Ornekler7
 
             //ornek15
 
-            string[] cumle = new string[5];
-            int uzunluk = 0;
-            string enuzun = "";
-            int indis = 0;
+            //string[] cumle = new string[5];
+            //int uzunluk = 0;
+            //string enuzun = "";
+            //int indis = 0;
+
+            //for (int i = 0; i < 5; i++)
+            //{
+            //    Console.WriteLine(i + 1 + ". metin giriniz:");
+            //    cumle[i] = Console.ReadLine();
+            //    if (cumle[i].Length > uzunluk)
+            //    {
+            //        uzunluk = cumle[i].Length;
+            //        enuzun = cumle[i];
+            //        indis = i;
+
+            //    }
+            //}
+            //Console.WriteLine("En uzun cümle : " + enuzun);
+            //Console.WriteLine("Uuzunluk : " + uzunluk);
+            //Console.WriteLine("Bulundugu indis sayısı : " + (indis + 1));
+
+            //Console.ReadLine();
 
 
 
-            for (int i = 0; i < 5; i++)
-            {
-                Console.WriteLine(i + 1 + ". metin giriniz:");
-                cumle[i] = Console.ReadLine();
-                if (cumle[i].Length > uzunluk)
-                {
-                    uzunluk = cumle[i].Length;
-                    enuzun = cumle[i];
-                    indis = i;
 
-                }
-            }
-            Console.WriteLine("En uzun cümle : " + enuzun);
-            Console.WriteLine("Uuzunluk : " + uzunluk);
-            Console.WriteLine("Bulundugu indis sayısı : " + (indis + 1));
 
-            Console.ReadLine();
+            //ornek16
+
+
+            //Random rastgele = new Random();
+            //int[] sayilar = new int[100];
+
+            //int enbüyük = -999999;
+            //int enkücük = 999999;
+
+            //for (int i = 0; i < 100; i++)
+            //{
+            //    sayilar[i] = rastgele.Next(1, 500);
+            //    if (sayilar[i] > enbüyük)
+            //        enbüyük = sayilar[i];
+
+            //    else if (sayilar[i] < enkücük)
+            //        enkücük = sayilar[i];
+            //}
+            //Console.WriteLine("EN BÜYÜK SAYI:  " + enbüyük);
+            //Console.WriteLine("EN KÜÇÜK SAYI: " + enkücük);
+
+            //Console.ReadLine();
+
+
         }
-
-
 
     }
     
