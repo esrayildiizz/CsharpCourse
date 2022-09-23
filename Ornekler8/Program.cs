@@ -93,11 +93,11 @@ namespace Ornekler8
 
         //iki parametreli geriye değer dondüren metot
         //birim fiyat versin  doların tutarına göre.
-        public static int DolarHesapla(int a,int b) //a:birim fiyat  //b:dolar
-        {
-            int tutar= a * b;
-            return tutar;
-        }
+        //public static int DolarHesapla(int a,int b) //a:birim fiyat  //b:dolar
+        //{
+        //    int tutar= a * b;
+        //    return tutar;
+        //}
 
 
         static void Main(string[] args)
@@ -137,12 +137,13 @@ namespace Ornekler8
 
 
 
-            Console.WriteLine("***Dolar Hesaplama Ekranı***");
-            Console.WriteLine(" Dolar Fiyatı giriniz: ");
-            int b = Convert.ToInt32(Console.ReadLine());
-            Console.WriteLine(" Kaç TL Fiyatını Öğrenmek istersiniz?: ");
-            int a = Convert.ToInt32(Console.ReadLine());
-            Console.WriteLine("Dolar Tutarı: "+DolarHesapla(a,b));
+            //Console.WriteLine("***Dolar Hesaplama Ekranı***");
+            //Console.WriteLine(" Dolar Fiyatı giriniz: ");
+            //int b = Convert.ToInt32(Console.ReadLine());
+            //Console.WriteLine(" Kaç TL Fiyatını Öğrenmek istersiniz?: ");
+            //int a = Convert.ToInt32(Console.ReadLine());
+            //Console.WriteLine("Dolar Tutarı: "+DolarHesapla(a,b));
+
 
             Console.ReadLine();
         }
