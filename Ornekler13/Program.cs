@@ -39,11 +39,43 @@ namespace Ornekler13
             }
             else if (secim == 2) //ofis gereçleri
             {
-                
+                Console.WriteLine("****Seçenekleri****");
+                Console.WriteLine("1-Mobilya");
+                Console.WriteLine("2-Sandalye");
+                Console.WriteLine("3-Dosya evrak");
+                Console.WriteLine("Seçmek istediğinizin kodunu yazın lütfen...");
+                int secme= Convert.ToInt32(Console.ReadLine());
+                if (secme == 1)
+                {
+                    Ofis(100, 5);
+                }
+                else if (secme == 2)
+                {
+                    Ofis(150, 6, 20);
+                }
+                else
+                {
+                    Ofis(50, 12, 25, 30);
+                }
 
-                //buradan devam
 
             }
+        }
+
+        public static void Ofis(int fiyat , int ürünadet)
+        {
+            int sonuc = fiyat * ürünadet;
+            Console.WriteLine("Ödeyeceğiniz tutar: "+sonuc);
+        }
+        public static void Ofis(int fiyat, int ürünadet,int kdv)
+        {
+            int sonuc = (fiyat * ürünadet)+kdv;
+            Console.WriteLine("Ödeyeceğiniz tutar: " + sonuc);
+        }
+        public static void Ofis(int fiyat, int ürünadet,int kdv,int ötv)
+        {
+            int sonuc = (fiyat * ürünadet)+kdv+ötv;
+            Console.WriteLine("Ödeyeceğiniz tutar: " + sonuc);
         }
 
         public static void Lise(double fiyat)
