@@ -15,6 +15,7 @@ namespace Class3
             Console.WriteLine("***SEÇENEKLER****");
             Console.WriteLine("a-yurtici");
             Console.WriteLine("b-mng");
+            Console.WriteLine("c-ptt");
             string kargo = Convert.ToString(Console.ReadLine());
 
             switch (kargo)
@@ -26,6 +27,10 @@ namespace Class3
                 case "b":
                     mng m = new mng();
                     m.EkranaYazdir();
+                    break;
+                case "c":
+                    ptt p = new ptt();
+                    p.EkranaYazdir();
                     break;
                 default: Console.WriteLine("Hatalı Giriş Yaptınız");
                           break;
