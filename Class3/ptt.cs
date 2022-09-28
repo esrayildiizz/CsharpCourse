@@ -15,24 +15,6 @@ namespace Class3
 
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
         public void EkranaYazdir()
         {
 
