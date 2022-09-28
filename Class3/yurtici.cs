@@ -137,8 +137,6 @@ namespace Class3
 
             Console.WriteLine("ücret : " + Yurtdisi(BirimFiyat, VergiOrani,Bolge));
 
-
-
         }
 
     }
