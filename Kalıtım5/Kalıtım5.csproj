@@ -43,10 +43,12 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="kamyon.cs" />
     <Compile Include="motorlutasitlar.cs" />
     <Compile Include="motorsikletler.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="yuktasitlar.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />

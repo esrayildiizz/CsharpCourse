@@ -6,11 +6,11 @@ using System.Threading.Tasks;
 
 namespace Kalıtım5
 {
-    class motorsikletler : motorlutasitlar
+    sealed class yuktasitlar : motorlutasitlar
     {
-        public string ekipmanlar;
-        public int depo;
-
+        //sealed class tan ben kalıtım bırakamam.
+        //direk kendi classını üreterek kullanılabilir..
+        //kalıtım alır.
         public override void Metot(string a, string b)
         {
             throw new NotImplementedException();
