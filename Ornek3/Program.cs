@@ -30,8 +30,14 @@ namespace Ornek3
                     break;
                 case 2:
                     Console.WriteLine("Denizyollarını seçtiniz....");
-                   
-                break;
+                    denizyollari arac2 = new denizyollari("yelkenli", "ali", 16);
+                    arac2.Tasittip= "Kamaralı";
+                    arac2.Kaptanadi = "ENES";
+                    arac2.Sefersaati = 14;
+                    Console.WriteLine("Taşıt tip: " + arac2.Tasittip);
+                    Console.WriteLine("Kaptan adı: " + arac2.Kaptanadi);
+                    Console.WriteLine("Sefer saati: " + arac2.Sefersaati);
+                    break;
                 case 3:
                     Console.WriteLine("Havayollarını seçtiniz....");
                     havayollari arac3 = new havayollari();
