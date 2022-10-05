@@ -8,7 +8,7 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 
-namespace WindowsFormsApp2
+namespace WindowsFormsApp8
 {
     public partial class Form1 : Form
     {
@@ -19,14 +19,13 @@ namespace WindowsFormsApp2
 
         private void button1_Click(object sender, EventArgs e)
         {
-            int fiyat = Convert.ToInt32(textBox2.Text);
-            int adet = Convert.ToInt32(textBox3.Text);
-            int sonuc = fiyat * adet;
-            MessageBox.Show(textBox1.Text + " ürününüzün toplam fiyatı: " + sonuc);
-        }
-
-        private void Form1_Load(object sender, EventArgs e)
-        {
+            Form2 go = new Form2();
+            go.Show();
+            this.Hide();
+            go.listBox1.Items.Add("Adınız Soyadınız: " + textBox1.Text);
+            go.listBox1.Items.Add("Yaşınız: " + textBox2.Text);
+            go.listBox1.Items.Add("Adres: " + textBox3.Text);
+            go.listBox1.Items.Add("Cinsiyet: " + comboBox1.SelectedItem);
 
         }
     }

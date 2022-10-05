@@ -51,5 +51,10 @@ namespace WindowsFormsApp4
             go5.Show();
             this.Hide();
         }
+
+        private void Form1_Load(object sender, EventArgs e)
+        {
+
+        }
     }
 }

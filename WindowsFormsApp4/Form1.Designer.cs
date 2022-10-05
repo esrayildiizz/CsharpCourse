@@ -33,13 +33,13 @@ namespace WindowsFormsApp4
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Form1));
             this.menuStrip1 = new System.Windows.Forms.MenuStrip();
             this.satılıkToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.kiralıkToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.ımageList1 = new System.Windows.Forms.ImageList(this.components);
             this.daireToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.villaToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.arsaToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.kiralıkToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.daireToolStripMenuItem1 = new System.Windows.Forms.ToolStripMenuItem();
             this.dükkanToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.ımageList1 = new System.Windows.Forms.ImageList(this.components);
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.menuStrip1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
@@ -68,6 +68,27 @@ namespace WindowsFormsApp4
             this.satılıkToolStripMenuItem.Size = new System.Drawing.Size(70, 25);
             this.satılıkToolStripMenuItem.Text = "Satılık";
             // 
+            // daireToolStripMenuItem
+            // 
+            this.daireToolStripMenuItem.Name = "daireToolStripMenuItem";
+            this.daireToolStripMenuItem.Size = new System.Drawing.Size(169, 26);
+            this.daireToolStripMenuItem.Text = "SatılıkDaire";
+            this.daireToolStripMenuItem.Click += new System.EventHandler(this.daireToolStripMenuItem_Click);
+            // 
+            // villaToolStripMenuItem
+            // 
+            this.villaToolStripMenuItem.Name = "villaToolStripMenuItem";
+            this.villaToolStripMenuItem.Size = new System.Drawing.Size(169, 26);
+            this.villaToolStripMenuItem.Text = "Villa";
+            this.villaToolStripMenuItem.Click += new System.EventHandler(this.villaToolStripMenuItem_Click);
+            // 
+            // arsaToolStripMenuItem
+            // 
+            this.arsaToolStripMenuItem.Name = "arsaToolStripMenuItem";
+            this.arsaToolStripMenuItem.Size = new System.Drawing.Size(169, 26);
+            this.arsaToolStripMenuItem.Text = "Arsa";
+            this.arsaToolStripMenuItem.Click += new System.EventHandler(this.arsaToolStripMenuItem_Click);
+            // 
             // kiralıkToolStripMenuItem
             // 
             this.kiralıkToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
@@ -78,46 +99,25 @@ namespace WindowsFormsApp4
             this.kiralıkToolStripMenuItem.Size = new System.Drawing.Size(71, 25);
             this.kiralıkToolStripMenuItem.Text = "Kiralık";
             // 
-            // ımageList1
-            // 
-            this.ımageList1.ColorDepth = System.Windows.Forms.ColorDepth.Depth8Bit;
-            this.ımageList1.ImageSize = new System.Drawing.Size(16, 16);
-            this.ımageList1.TransparentColor = System.Drawing.Color.Transparent;
-            // 
-            // daireToolStripMenuItem
-            // 
-            this.daireToolStripMenuItem.Name = "daireToolStripMenuItem";
-            this.daireToolStripMenuItem.Size = new System.Drawing.Size(180, 26);
-            this.daireToolStripMenuItem.Text = "SatılıkDaire";
-            this.daireToolStripMenuItem.Click += new System.EventHandler(this.daireToolStripMenuItem_Click);
-            // 
-            // villaToolStripMenuItem
-            // 
-            this.villaToolStripMenuItem.Name = "villaToolStripMenuItem";
-            this.villaToolStripMenuItem.Size = new System.Drawing.Size(180, 26);
-            this.villaToolStripMenuItem.Text = "Villa";
-            this.villaToolStripMenuItem.Click += new System.EventHandler(this.villaToolStripMenuItem_Click);
-            // 
-            // arsaToolStripMenuItem
-            // 
-            this.arsaToolStripMenuItem.Name = "arsaToolStripMenuItem";
-            this.arsaToolStripMenuItem.Size = new System.Drawing.Size(180, 26);
-            this.arsaToolStripMenuItem.Text = "Arsa";
-            this.arsaToolStripMenuItem.Click += new System.EventHandler(this.arsaToolStripMenuItem_Click);
-            // 
             // daireToolStripMenuItem1
             // 
             this.daireToolStripMenuItem1.Name = "daireToolStripMenuItem1";
-            this.daireToolStripMenuItem1.Size = new System.Drawing.Size(180, 26);
+            this.daireToolStripMenuItem1.Size = new System.Drawing.Size(174, 26);
             this.daireToolStripMenuItem1.Text = "Kiralık Daire";
             this.daireToolStripMenuItem1.Click += new System.EventHandler(this.daireToolStripMenuItem1_Click);
             // 
             // dükkanToolStripMenuItem
             // 
             this.dükkanToolStripMenuItem.Name = "dükkanToolStripMenuItem";
-            this.dükkanToolStripMenuItem.Size = new System.Drawing.Size(180, 26);
+            this.dükkanToolStripMenuItem.Size = new System.Drawing.Size(174, 26);
             this.dükkanToolStripMenuItem.Text = "Dükkan";
             this.dükkanToolStripMenuItem.Click += new System.EventHandler(this.dükkanToolStripMenuItem_Click);
+            // 
+            // ımageList1
+            // 
+            this.ımageList1.ColorDepth = System.Windows.Forms.ColorDepth.Depth8Bit;
+            this.ımageList1.ImageSize = new System.Drawing.Size(16, 16);
+            this.ımageList1.TransparentColor = System.Drawing.Color.Transparent;
             // 
             // pictureBox1
             // 
@@ -137,9 +137,10 @@ namespace WindowsFormsApp4
             this.Controls.Add(this.menuStrip1);
             this.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
             this.MainMenuStrip = this.menuStrip1;
-            this.Margin = new System.Windows.Forms.Padding(5, 5, 5, 5);
+            this.Margin = new System.Windows.Forms.Padding(5);
             this.Name = "Form1";
             this.Text = "EMLAK";
+            this.Load += new System.EventHandler(this.Form1_Load);
             this.menuStrip1.ResumeLayout(false);
             this.menuStrip1.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
