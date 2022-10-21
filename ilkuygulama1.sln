@@ -1,7 +1,7 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 12.00
-# Visual Studio Version 16
-VisualStudioVersion = 16.0.32602.291
+# Visual Studio Version 17
+VisualStudioVersion = 17.2.32616.157
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ilkuygulama", "ilkuygulama\ilkuygulama.csproj", "{986D7F50-4FD5-4997-B56C-85BD896B877E}"
 EndProject
@@ -116,6 +116,8 @@ EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Ornek9", "Ornek9\Ornek9.csproj", "{FD273701-5D0E-4CA2-BC21-AFC2E7E6CDD7}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WindowsFormsApp10", "WindowsFormsApp10\WindowsFormsApp10.csproj", "{F01A6DF2-E72E-45FB-A5B0-1110141C3280}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Interface", "Interface\Interface.csproj", "{E1EB24A9-9920-4FF4-9046-FD648CFBDC0D}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -351,6 +353,10 @@ Global
 		{F01A6DF2-E72E-45FB-A5B0-1110141C3280}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{F01A6DF2-E72E-45FB-A5B0-1110141C3280}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{F01A6DF2-E72E-45FB-A5B0-1110141C3280}.Release|Any CPU.Build.0 = Release|Any CPU
+		{E1EB24A9-9920-4FF4-9046-FD648CFBDC0D}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{E1EB24A9-9920-4FF4-9046-FD648CFBDC0D}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{E1EB24A9-9920-4FF4-9046-FD648CFBDC0D}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{E1EB24A9-9920-4FF4-9046-FD648CFBDC0D}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

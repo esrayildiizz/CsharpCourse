@@ -43,9 +43,11 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="IDurum.cs" />
     <Compile Include="IIslem.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Telefon.cs" />
     <Compile Include="Urunler.cs" />
   </ItemGroup>
   <ItemGroup>
